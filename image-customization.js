@@ -26,7 +26,6 @@ ImageCustomizer.prototype.constructor = ImageCustomizer;
 
 ImageCustomizer.prototype._init = function() {
     var that = this;
-    var observer;
     var img = this.element.querySelector('img');
     this.$styleInput = this._getStyleInput();
     this.$styleInput.on('valuechange.enketo inputupdate.enketo', this._updateImage.bind(this));
@@ -119,7 +118,6 @@ ImageCustomizer.prototype._isSvgDoc = function(data) {
 };
 
 ImageCustomizer.prototype._complementSelectedRule = function(obj) {
-    var index;
     // TODO: add a .or-appearance-image-customization [or-selected] CSS rule at the end of the stylesheet.
     if (!complementaryStylesheet) {
         $('head').append('<style/>');
@@ -141,8 +139,6 @@ ImageCustomizer.prototype._updateImage = function() {
     var $path;
     var id;
     var styleAttr;
-    var prop;
-    var that = this;
     var str = this.$styleInput.val();
     var style = JSON.parse(str);
     // We do not cache this to simplify instantiation on question that also have an imagemap-widget
@@ -169,7 +165,7 @@ ImageCustomizer.prototype._getStyleValue = function(obj) {
     var prop;
     var value = '';
     for (prop in obj) {
-        value += prop + ':' + obj[prop] + ';';
+        value += prop + ':' + obj[prop] + ' !important;';
     }
     return value;
 };

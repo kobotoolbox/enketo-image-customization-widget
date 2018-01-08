@@ -2,7 +2,7 @@
     "name": "enketo-image-customization-widget",
     "description": "Enketo widget to customize SVG images",
     "homepage": "https://enketo.org",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "./image-customization.js",
     "keywords": ["enketo"],
     "repository": {
