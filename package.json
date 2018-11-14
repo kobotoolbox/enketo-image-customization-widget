@@ -19,6 +19,6 @@
     "private": true,
     "license": "Apache-2.0",
     "dependencies": {
-        "enketo-core": "5.x.x"
+        "enketo-core": "github:enketo/enketo-core.git#2311d14c"
     }
 }
