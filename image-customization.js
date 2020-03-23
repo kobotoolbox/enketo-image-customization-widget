@@ -4,7 +4,7 @@ import $ from 'jquery';
 let complementaryStylesheet; // one stylesheet per widget (not per instance of the widget)
 
 /**
- * Image Map widget that turns an SVG image into a clickable map 
+ * Image Map widget that turns an SVG image into a clickable map
  * by matching radiobutton/checkbox values with id attribute values in the SVG
  */
 class ImageCustomizer extends Widget {
@@ -29,7 +29,7 @@ ImageCustomizer.prototype._init = function() {
     this.$styleInput.on( 'valuechange.enketo inputupdate.enketo', this._updateImage.bind( this ) );
 
     if ( this.element.classList.contains( 'or-image-map-initialized' ) ) {
-        // Knowing that the imagemap widget will be added to DOM as sibling of .option-wrapper, 
+        // Knowing that the imagemap widget will be added to DOM as sibling of .option-wrapper,
         // observe its parent and monitor the childList.
         new MutationObserver( mutations => {
             mutations.forEach( mutation => {
