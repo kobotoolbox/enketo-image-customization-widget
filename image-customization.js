@@ -65,7 +65,7 @@ ImageCustomizer.prototype._init = function() {
 
 ImageCustomizer.prototype._getStyleInput = function() {
     const input = this.element.querySelector( 'input' );
-    const contextPath = this.options.helpers.input.getName( $( input ) );
+    const contextPath = this.options.helpers.input.getName( input );
 
     if ( this.element.dataset.imageCustomization ) {
         const targetPath = this.element.dataset.imageCustomization.trim();
