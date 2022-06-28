@@ -3,6 +3,8 @@ Image Customization Widget
 
 To add this widget to your Enketo Express installation see [this guidance](https://enketo.github.io/enketo-express/tutorial-34-custom-widgets.html).
 
+For in-depth usage documentation, please refer to https://github.com/kobotoolbox/wfp-svg-map-documentation.
+
 Works on SVG media if the following is present for a question in XLSForm (or XForm):
 
 1. Appearance `"image-customization"` on `select_one` and `select_multiple` questions.
