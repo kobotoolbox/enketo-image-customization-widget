@@ -19,6 +19,6 @@
     "private": true,
     "license": "Apache-2.0",
     "dependencies": {
-        "enketo-core": "7.2.3"
+        "enketo-core": "8.3.0"
     }
 }
