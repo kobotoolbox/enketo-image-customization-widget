@@ -27,4 +27,4 @@ Works on SVG media if the following is present for a question in XLSForm (or XFo
 }
 ```
 
-Note that this widget is a custom hack for which we cannot device a proper sane XForm syntax. It is therefore not suitable for inclusion in the common Enketo tools and the ODK XForms specification.
+Note that this widget is a custom hack for which we cannot devise a proper sane XForm syntax. It is therefore not suitable for inclusion in the common Enketo tools and the ODK XForms specification.
